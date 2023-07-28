@@ -1,0 +1,35 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.socials nav {
+    display: flex;
+}
+
+.socials nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials nav li {
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 20%;
+}
+
+.socials nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 60px;
+    padding: 0px 60px 0px 60px;
+}

@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header svg {
+    padding-left: 29px;
+    width: 100px;
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600    ;
+    padding: 0px 29px 0px 29px;
+}

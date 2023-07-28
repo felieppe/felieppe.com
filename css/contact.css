@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 90%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.contact label {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact textarea {
+    resize: none;
+    height: 20%;
+}
+
+.contact input, textarea {
+    margin-bottom: 20px;
+}
