@@ -46,6 +46,7 @@
     border: 1px solid black !important;
     color: white !important;
     cursor: default !important;
+    pointer-events: none !important;
 }
 
 .portfolio-content {
