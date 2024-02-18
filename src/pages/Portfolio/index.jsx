@@ -51,6 +51,12 @@ function Portfolio() {
                             <Project key={index} {...project} />
                         )
                     })}
+
+                    { filteredProjects == 0 ?
+                        <div className='portfolio-empty'>
+                            <p>Oops... I have not worked with anything related about {selectedTag}!</p>
+                        </div>
+                    : null }
                 </div>       
             </div>
         </>
