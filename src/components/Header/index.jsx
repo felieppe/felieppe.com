@@ -4,20 +4,28 @@ import Logo from "./logo.svg"
 
 function Header() {
     return (
-        <div className="header">
-            <div className="header-logo">
-                <img src={Logo}></img>
+        <>
+            <div className="header">
+                <div className="header-logo">
+                    <img src={Logo}></img>
+                </div>
+
+                <div className="header-buttons">
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/portfolio">PORTFOLIO</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div className="header-buttons">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/about">ABOUT</a></li>
-                    <li><a href="/portfolio">PORTFOLIO</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
-                </ul>
+            <div className='subheader'>
+                <div className='subheader-quote'>
+                    <p>DIAMONDS ON MY TEETH, LIL' B****, I AIN'T SMILIN' FOR NOTHIN'</p>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
