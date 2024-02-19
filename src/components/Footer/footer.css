@@ -44,6 +44,9 @@
 .footer-up-socials ul li {
     width: 25px;
 }
+.footer-up-socials ul li:hover {
+    opacity: 0.8;
+}
 .footer-up-socials ul li:not(:last-child) {
     margin: 0 30px 0 0;
 }
