@@ -1,4 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.contact,
+.portfolio {
+    padding: 0 0 180px 0;
 }

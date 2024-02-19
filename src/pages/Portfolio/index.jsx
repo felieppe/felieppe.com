@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './portfolio.css'
 
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import Project from './project'
 
 import Felieppe from '../../assets/felieppe.com_cover.png'
@@ -59,6 +60,8 @@ function Portfolio() {
                     : null }
                 </div>       
             </div>
+
+            <Footer />
         </>
     )
 }
