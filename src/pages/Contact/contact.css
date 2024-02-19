@@ -16,7 +16,7 @@
 }
 
 .contact-form {
-    background-color: black;
+    background-color: transparent;
     padding: 50px 30px;
     width: 620px;
     border-radius: 10px;
@@ -30,13 +30,16 @@
     font-style: normal;
     font-weight: bold;
     margin: 0 0 20px 0;
-    color: white;
+    color: black;
 }
 
+.contact-form form {
+    width: fit-content;
+}
 .contact-form form label {
     font-family: "Sofia Sans", sans-serif;
     opacity: 0.8;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .contact-form form input:not(.contact-form-submit) {
     background: none;
@@ -47,7 +50,7 @@
     width: 300px;
     margin: 0 0 15px 0;
     font-family: "Sofia Sans", sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .contact-form form input:not(.contact-form-submit):hover {
     border: 1px solid rgb(77, 77, 77);
@@ -63,7 +66,7 @@
     resize: none;
     margin: 0 0 10px 0;
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .contact-form form textarea::-webkit-scrollbar-track
 {
@@ -84,12 +87,15 @@
 }
 
 .contact-form-submit {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: bold;
+    color: white;
+    cursor: pointer;
+    width: 100%;
 }
 
 input:-webkit-autofill,
