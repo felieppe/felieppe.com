@@ -1,13 +1,13 @@
 import './header.css'
 
-import Logo from "./logo.svg"
+import Logo from "../../assets/logo.svg"
 
 function Header() {
     return (
         <>
             <div className="header">
                 <div className="header-logo">
-                    <img src={Logo}></img>
+                    <a href="/"><img src={Logo} alt="FC"></img></a>
                 </div>
 
                 <div className="header-buttons">
