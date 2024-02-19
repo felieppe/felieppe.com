@@ -6,7 +6,7 @@ import Footer from '../../components/Footer'
 function Contact() {
     return (
         <>
-            <Header/>
+            <Header actual={"CONTACT"}/>
 
             <div className='contact-title'>
                 <h1>CONTACT ME</h1>

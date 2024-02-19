@@ -2,7 +2,7 @@ import './header.css'
 
 import Logo from "../../assets/logo.svg"
 
-function Header() {
+function Header( { actual }) {
     return (
         <>
             <div className="header">
@@ -12,10 +12,10 @@ function Header() {
 
                 <div className="header-buttons">
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li><a href="/portfolio">PORTFOLIO</a></li>
-                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a className={ actual.toUpperCase() == "HOME" ? "header-buttons-active" : null } href="/">HOME</a></li>
+                        <li><a className={ actual.toUpperCase() == "ABOUT" ? "header-buttons-active" : null } href="/about">ABOUT</a></li>
+                        <li><a className={ actual.toUpperCase() == "PORTFOLIO" ? "header-buttons-active" : null } href="/portfolio">PORTFOLIO</a></li>
+                        <li><a className={ actual.toUpperCase() == "CONTACT" ? "header-buttons-active" : null } href="/contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>

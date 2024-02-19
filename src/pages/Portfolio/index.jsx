@@ -29,7 +29,7 @@ function Portfolio() {
 
     return (
         <>
-            <Header />
+            <Header actual={"PORTFOLIO"}/>
 
             <div className='portfolio'>
                 <div className='portfolio-title'>
