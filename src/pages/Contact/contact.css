@@ -2,10 +2,11 @@
 
 .contact {
     margin: 40px 60px 0;
+    display: flex;
 }
 
 .contact-title {
-    margin: 0 0 5px;
+    margin: 40px 60px 0;
 }
 
 .contact-title h1 {
@@ -19,10 +20,11 @@
     background-color: transparent;
     padding: 50px 30px;
     width: 620px;
-    border-radius: 10px;
+    border-right: 1px solid rgb(178, 178, 178);;
 }
 
-.contact-form-title p {
+.contact-form-title p,
+.contact-other-title {
     margin: 0;
     padding: 0;
     font-family: "Sofia Sans", sans-serif;
@@ -103,4 +105,32 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+}
+
+.contact-other { 
+    padding: 50px 30px 50px 60px;
+}
+
+.contact-other-method {
+    display: flex;
+}
+
+.contact-other-method-icon {
+    width: 23px;
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-other-method-data {
+    display: flex;
+    align-items: center;
+}
+
+.contact-other-method-data a {
+    margin: 0;
+    font-size: 13pt;
+    color: black;
+    text-decoration: none;
+    font-family: "Sofia Sans", sans-serif;
 }
