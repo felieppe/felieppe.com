@@ -1,9 +1,15 @@
 import './about.css'
 
+import { useEffect } from 'react';
+
 import Header from '../../components/Header' 
 import Footer from '../../components/Footer'
 
 function About() {
+    useEffect(() => {
+        document.title = "About | Felipe Cabrera"
+    }, [])
+
     function calculateAge() {
         var today = new Date();
         var birth = new Date("2004-07-24")

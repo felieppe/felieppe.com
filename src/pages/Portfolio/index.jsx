@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './portfolio.css'
 
+import { useEffect } from 'react';
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Project from './project'
@@ -12,6 +14,10 @@ import Minepy from '../../assets/minepy_cover.png'
 import Conways from '../../assets/conways_cover.png'
 
 function Portfolio() {
+    useEffect(() => {
+        document.title = "Portfolio | Felipe Cabrera"
+    }, [])
+
     const [ selectedTag, setSelectedTag ] = useState('ALL')
 
     const projects = [

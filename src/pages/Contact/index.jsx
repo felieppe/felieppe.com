@@ -1,9 +1,15 @@
 import './contact.css'
 
+import { useEffect } from 'react';
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 function Contact() {
+    useEffect(() => {
+        document.title = "Contact | Felipe Cabrera"
+    }, [])
+
     return (
         <>
             <Header actual={"CONTACT"}/>

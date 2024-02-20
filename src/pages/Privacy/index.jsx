@@ -1,9 +1,15 @@
 import './privacy.css'
 
+import { useEffect } from 'react';
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 function Privacy() {
+    useEffect(() => {
+        document.title = "Privacy | Felipe Cabrera"
+    }, [])
+
     return (
         <>
             <Header />
