@@ -1,13 +1,17 @@
 import './footer.css'
 
+import { useNavigate } from 'react-router-dom'
+
 function Footer() {
+    const navigate = useNavigate()
+
     return (
         <div className='footer'>
             <div className='footer-up'>
                 <div className='footer-up-nav'>
                     <ul>
-                        <li><a href="/privacy">PRIVACY</a></li>
-                        <li><a href="/sitemap">SITEMAP</a></li>
+                        <li><a onClick={() => {navigate("/privacy")}}>PRIVACY</a></li>
+                        <li><a onClick={() => {navigate("/sitemap")}}>SITEMAP</a></li>
                     </ul>
                 </div>
 
