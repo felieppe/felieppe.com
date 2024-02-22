@@ -12,7 +12,7 @@ function Privacy() {
 
     return (
         <>
-            <Header />
+            <Header actual={""}/>
 
             <div className='privacy'>
                 <div className='privacy-title'>
