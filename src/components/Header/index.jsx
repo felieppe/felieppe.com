@@ -16,7 +16,7 @@ function Header( { actual }) {
 
                 <div className="header-buttons">
                     <ul>
-                        <li><a onClick={() => {navigate("/home")}} className={ actual.toUpperCase() == "HOME" ? "header-buttons-active" : null }>HOME</a></li>
+                        <li><a onClick={() => {navigate("/")}} className={ actual.toUpperCase() == "HOME" ? "header-buttons-active" : null }>HOME</a></li>
                         <li><a onClick={() => {navigate("/about")}} className={ actual.toUpperCase() == "ABOUT" ? "header-buttons-active" : null }>ABOUT</a></li>
                         <li><a onClick={() => {navigate("/portfolio")}} className={ actual.toUpperCase() == "PORTFOLIO" ? "header-buttons-active" : null }>PORTFOLIO</a></li>
                         <li><a onClick={() => {navigate("/contact")}} className={ actual.toUpperCase() == "CONTACT" ? "header-buttons-active" : null }>CONTACT</a></li>
