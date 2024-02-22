@@ -1,8 +1,12 @@
 import './header.css'
 
+import { useNavigate } from 'react-router-dom'
+
 import Logo from "../../assets/logo.svg"
 
 function Header( { actual }) {
+    const navigate = useNavigate()
+
     return (
         <>
             <div className="header">
@@ -12,10 +16,10 @@ function Header( { actual }) {
 
                 <div className="header-buttons">
                     <ul>
-                        <li><a className={ actual.toUpperCase() == "HOME" ? "header-buttons-active" : null } href="/">HOME</a></li>
-                        <li><a className={ actual.toUpperCase() == "ABOUT" ? "header-buttons-active" : null } href="/about">ABOUT</a></li>
-                        <li><a className={ actual.toUpperCase() == "PORTFOLIO" ? "header-buttons-active" : null } href="/portfolio">PORTFOLIO</a></li>
-                        <li><a className={ actual.toUpperCase() == "CONTACT" ? "header-buttons-active" : null } href="/contact">CONTACT</a></li>
+                        <li><a onClick={() => {navigate("/home")}} className={ actual.toUpperCase() == "HOME" ? "header-buttons-active" : null }>HOME</a></li>
+                        <li><a onClick={() => {navigate("/about")}} className={ actual.toUpperCase() == "ABOUT" ? "header-buttons-active" : null }>ABOUT</a></li>
+                        <li><a onClick={() => {navigate("/portfolio")}} className={ actual.toUpperCase() == "PORTFOLIO" ? "header-buttons-active" : null }>PORTFOLIO</a></li>
+                        <li><a onClick={() => {navigate("/contact")}} className={ actual.toUpperCase() == "CONTACT" ? "header-buttons-active" : null }>CONTACT</a></li>
                     </ul>
                 </div>
             </div>

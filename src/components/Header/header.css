@@ -28,6 +28,7 @@
 }
 .header-buttons ul li {
     display: inline;
+    cursor: pointer;
 }
 .header-buttons ul li:not(:last-child) {
     margin: 0 60px 0 0;
