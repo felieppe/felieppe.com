@@ -26,7 +26,7 @@ function Portfolio() {
         { imageSrc: Naval, imageBoxColor: "#1e3c72", infoBoxColor: "#3c6fc9", tags: ["MOBILE", "TELEGRAM", "BOTCHAT"], githubUrl: "https://github.com/felieppe/NavalBattle", name: "Naval Battle" },
         { imageSrc: Minepy, imageBoxColor: "#b93d46", infoBoxColor: "#d95f67", tags: ["CONSOLE", "PYTHON", "GAME"], githubUrl: "https://github.com/felieppe/Minepy", name: "Minepy" },
         { imageSrc: Conways, imageBoxColor: "#18a86b", infoBoxColor: "#2fb383", tags: ["CONSOLE", ".NET", "GAME"], githubUrl: "https://github.com/felieppe/ConwaysLife", name: "Conways Life" },
-        { imageSrc: Challenge, imageBoxColor: "#052d66", infoBoxColor: "#7fb3fd", tags: ["MOBILE", "MOCKUP", "ECOLOGICAL"], ytUrl: "https://www.youtube.com/watch?v=7di4GbpxrWM", name: "Desafío Ingeniería" }
+        { imageSrc: Challenge, imageBoxColor: "#052d66", infoBoxColor: "#e3e3e3", tags: ["MOBILE", "MOCKUP", "ECOLOGICAL"], ytUrl: "https://www.youtube.com/watch?v=7di4GbpxrWM", name: "Desafío Ingeniería" }
     ]
 
     const handleTagClick = (tag) => {
