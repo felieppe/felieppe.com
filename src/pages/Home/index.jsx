@@ -1,3 +1,5 @@
+import './home.css'
+
 import { useEffect } from 'react';
 
 import Header from '../../components/Header'
@@ -10,7 +12,15 @@ function Home() {
 
     return (
         <>
-            <Header actual={"home"}/>
+            <Header actual={"HOME"} />
+
+            <div className='home'>
+                <div className='home-title'>
+                    <h1>WELCOME,</h1>
+                    <h1>I'M FELIPE CABRERA</h1>
+                </div>
+            </div>
+
             <Footer />
         </>
     )
