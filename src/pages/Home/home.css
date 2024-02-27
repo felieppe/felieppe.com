@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+.home {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-title {
+    height: fit-content;
+    text-align: center;
+}
+
+.home-title h1 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 80pt;
+    margin: 10px;
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
