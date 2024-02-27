@@ -1,11 +1,14 @@
 import './privacy.css'
 
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 function Privacy() {
+    const navigate = useNavigate()
+
     useEffect(() => {
         document.title = "Privacy | Felipe Cabrera"
     }, [])
@@ -65,7 +68,7 @@ function Privacy() {
 
                     <p>Children's Privacy</p>
 
-                    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+                    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please <a onClick={() => {navigate("/contact")}}>contact us</a> so that we will be able to do necessary actions.</p>
 
                     <h2>Changes to This Privacy Policy</h2>
 
@@ -73,7 +76,7 @@ function Privacy() {
 
                     <h2>Contact Us</h2>
 
-                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a href="/contact">contact us</a>.</p>
+                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a onClick={() => {navigate("/contact")}}>contact us</a>.</p>
                 </div>
             </div>
 
