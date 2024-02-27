@@ -25,4 +25,5 @@
 }
 .privacy-content a {
     text-decoration: none;
+    cursor: pointer;
 }

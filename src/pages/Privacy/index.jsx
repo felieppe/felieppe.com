@@ -1,11 +1,14 @@
 import './privacy.css'
 
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 function Privacy() {
+    const navigate = useNavigate()
+
     useEffect(() => {
         document.title = "Privacy | Felipe Cabrera"
     }, [])
@@ -20,13 +23,13 @@ function Privacy() {
                 </div>
 
                 <div className='privacy-content'>
-                    <p>{window.location.hostname}.com operates the https://www.{window.location.hostname}.com website, which provides the SERVICE.</p>
+                    <p>{window.location.hostname} operates the https://{window.location.hostname} website, which provides the SERVICE.</p>
 
                     <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Felipe Cabrera website.</p>
 
                     <p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
 
-                    <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://www.{window.location.hostname}.com, unless otherwise defined in this Privacy Policy.</p>
+                    <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://www.{window.location.hostname}, unless otherwise defined in this Privacy Policy.</p>
 
                     <h2>Information Collection and Use</h2>
 
@@ -47,10 +50,10 @@ function Privacy() {
                     <p>We may employ third-party companies and individuals due to the following reasons:</p>
 
                     <ul>
-                        <li>To facilitate our Service;</li>
-                        <li>To provide the Service on our behalf;</li>
-                        <li>To perform Service-related services; or</li>
-                        <li>To assist us in analyzing how our Service is used.</li>
+                        <li><p>To facilitate our Service;</p></li>
+                        <li><p>To provide the Service on our behalf;</p></li>
+                        <li><p>To perform Service-related services; or</p></li>
+                        <li><p>To assist us in analyzing how our Service is used.</p></li>
                     </ul>
 
                     <p>We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
@@ -65,7 +68,7 @@ function Privacy() {
 
                     <p>Children's Privacy</p>
 
-                    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+                    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please <a onClick={() => {navigate("/contact")}}>contact us</a> so that we will be able to do necessary actions.</p>
 
                     <h2>Changes to This Privacy Policy</h2>
 
@@ -73,7 +76,7 @@ function Privacy() {
 
                     <h2>Contact Us</h2>
 
-                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a href="/contact">contact us</a>.</p>
+                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a onClick={() => {navigate("/contact")}}>contact us</a>.</p>
                 </div>
             </div>
 
